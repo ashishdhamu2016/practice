@@ -1,3 +1,6 @@
-from itertools import permutations
+import unittest
 
-print([x for x in permutations(range(1, 4), 2)])
+class MyTests(unittest.TestCase):
+    def check_expected_results(self):
+        x = 1
+        y = 2

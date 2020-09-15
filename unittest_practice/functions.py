@@ -6,6 +6,7 @@ def divide(dividend: Union[int, float], divisor:Union[int, float]):
         raise ValueError("divisor cannot be zero!")
     return dividend / divisor
 
+
 def multiply(*args: Union[int, float]):
     if len(args) == 0:
         raise ValueError("there should be atleast one argument!")
@@ -15,6 +16,7 @@ def multiply(*args: Union[int, float]):
         total *= arg
     print(f"total is: {total}")
     return total
+
 
 data = [21,22,23]
 from functools import reduce

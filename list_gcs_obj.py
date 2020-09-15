@@ -11,7 +11,7 @@ def list_blobs(bucket_name):
     storage_client = storage.Client()
 
     # Note: Client.list_blobs requires at least package version 1.17.0.
-    blobs = storage_client.list_blobs(bucket_name, prefix='tmp', delimiter='/')
+    blobs = storage_client.list_blobs('dhamu-gcp-learn-beam')
 
     # print(len([1 for blob in blobs]))
     for blob in blobs:
