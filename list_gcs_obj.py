@@ -22,4 +22,4 @@ def list_blobs(bucket_name):
 
 list_blobs('dhamu-gcp-learn-beam')
 end_time = time.time()
-print(f'{end_time - start_time}')
+print(f'Time Taken : {end_time - start_time}')
